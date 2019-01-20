@@ -1,0 +1,89 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    ce84ee80-4339-408e-ae8a-afbda72c4425:
+      size:
+        width: 400
+        height: 300
+      position:
+        x: 154
+        'y': 323
+      z: 0
+      embeds:
+        - 972c8533-804f-4863-9b9a-32a36d178a8e
+    972c8533-804f-4863-9b9a-32a36d178a8e:
+      size:
+        width: 140
+        height: 140
+      position:
+        x: 294.1854248046875
+        'y': 405.9270935058594
+      z: 1
+      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
+      embeds: []
+      iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+    48ed8e65-3886-47f4-8885-e15a288138d1:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 40
+        'y': 330
+      z: 0
+      embeds: []
+    46d920b5-d5d1-4e5b-8981-b4f08abeb5d5:
+      source:
+        id: ce84ee80-4339-408e-ae8a-afbda72c4425
+      target:
+        id: 48ed8e65-3886-47f4-8885-e15a288138d1
+      z: 0
+Resources:
+  VPCtest:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      Tags:
+        - Key: Name
+          Value: VPC Test
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: ce84ee80-4339-408e-ae8a-afbda72c4425
+  PublicSubnet:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref VPCtest
+      AvailabilityZone: us-east-1a
+      CidrBlock: 10.0.1.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: PubliAvailabilityZone: us-east-1ac Subnet test
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 972c8533-804f-4863-9b9a-32a36d178a8e
+  InternetGateway:
+    Type: 'AWS::EC2::InternetGateway'
+    Properties:
+      Tags:
+        - Key: Name
+          Value: Internet Gateway test
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 48ed8e65-3886-47f4-8885-e15a288138d1
+  GatewayToInternet:
+    Type: 'AWS::EC2::VPCGatewayAttachment'
+    Properties:
+      InternetGatewayId: !Ref InternetGateway
+      VpcId: !Ref VPCtest
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
