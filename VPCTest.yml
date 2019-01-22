@@ -10,18 +10,36 @@ Metadata:
         'y': 323
       z: 0
       embeds:
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - b30ef676-f0c0-4cb6-949d-c7688a9146a8
         - 972c8533-804f-4863-9b9a-32a36d178a8e
     972c8533-804f-4863-9b9a-32a36d178a8e:
       size:
-        width: 140
-        height: 140
+        width: 80
+        height: 80
       position:
-        x: 294.1854248046875
-        'y': 405.9270935058594
+        x: 420
+        'y': 350
       z: 1
       parent: ce84ee80-4339-408e-ae8a-afbda72c4425
       embeds: []
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -46,6 +64,90 @@ Metadata:
       target:
         id: 48ed8e65-3886-47f4-8885-e15a288138d1
       z: 0
+    b30ef676-f0c0-4cb6-949d-c7688a9146a8:
+      size:
+        width: 80
+        height: 80
+      position:
+        x: 420
+        'y': 530
+      z: 1
+      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
+      embeds: []
+      iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+    d00731d1-4662-48b1-82df-79a4d35152e4:
+      size:
+        width: 140
+        height: 140
+      position:
+        x: 190
+        'y': 370
+      z: 1
+      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
+      embeds:
+        - 9ae53da4-51fb-44af-9155-b587d148fdb5
+      iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+    9ae53da4-51fb-44af-9155-b587d148fdb5:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 220
+        'y': 410
+      z: 2
+      parent: d00731d1-4662-48b1-82df-79a4d35152e4
+      embeds: []
+      isassociatedwith:
+        - 48ed8e65-3886-47f4-8885-e15a288138d1
+      iscontainedinside:
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+      dependson:
+        - 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
+    06584ed1-fbda-475e-9a6a-28ac173e2a94:
+      source:
+        id: d00731d1-4662-48b1-82df-79a4d35152e4
+      target:
+        id: 972c8533-804f-4863-9b9a-32a36d178a8e
+      z: 1
 Resources:
   VPCtest:
     Type: 'AWS::EC2::VPC'
@@ -66,7 +168,7 @@ Resources:
       MapPublicIpOnLaunch: true
       Tags:
         - Key: Name
-          Value: PubliAvailabilityZone: us-east-1ac Subnet test
+          Value: Public Subnet test
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 972c8533-804f-4863-9b9a-32a36d178a8e
@@ -87,3 +189,47 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
+  PrivateSubnet:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref VPCtest
+      AvailabilityZone: us-east-1b
+      CidrBlock: 10.0.2.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: Pravate Subnet test
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b30ef676-f0c0-4cb6-949d-c7688a9146a8
+  RouteTable:
+    Type: 'AWS::EC2::RouteTable'
+    Properties:
+      VpcId: !Ref VPCtest
+      Tags:
+        - Key: Name
+          Value: Route Table test
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: d00731d1-4662-48b1-82df-79a4d35152e4
+  RoutePublicTest:
+    Type: 'AWS::EC2::Route'
+    DependsOn: GatewayToInternet
+    Properties:
+      RouteTableId: !Ref RouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+      Tags:
+        - Key: Name
+        - Value: Route to Public Subnet
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 9ae53da4-51fb-44af-9155-b587d148fdb5
+  PublicSubnetRouteAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref RouteTable
+      SubnetId: !Ref PublicSubnet
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 06584ed1-fbda-475e-9a6a-28ac173e2a94
