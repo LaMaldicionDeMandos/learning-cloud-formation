@@ -13,6 +13,7 @@ Metadata:
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - b30ef676-f0c0-4cb6-949d-c7688a9146a8
         - 972c8533-804f-4863-9b9a-32a36d178a8e
+        - 159515ca-99f7-458f-9a79-32e72fdc465d
     972c8533-804f-4863-9b9a-32a36d178a8e:
       size:
         width: 80
@@ -24,6 +25,7 @@ Metadata:
       parent: ce84ee80-4339-408e-ae8a-afbda72c4425
       embeds: []
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -91,6 +93,7 @@ Metadata:
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
     d00731d1-4662-48b1-82df-79a4d35152e4:
       size:
         width: 140
@@ -103,6 +106,7 @@ Metadata:
       embeds:
         - 9ae53da4-51fb-44af-9155-b587d148fdb5
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -140,6 +144,7 @@ Metadata:
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
       dependson:
         - 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
     06584ed1-fbda-475e-9a6a-28ac173e2a94:
@@ -148,6 +153,17 @@ Metadata:
       target:
         id: 972c8533-804f-4863-9b9a-32a36d178a8e
       z: 1
+    159515ca-99f7-458f-9a79-32e72fdc465d:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 180
+        'y': 540
+      z: 1
+      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
+      iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
 Resources:
   VPCtest:
     Type: 'AWS::EC2::VPC'
@@ -233,3 +249,16 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 06584ed1-fbda-475e-9a6a-28ac173e2a94
+  PrincipalSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      VpcId: !Ref VPCtest
+      GroupDescription: Security Group Principal
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 159515ca-99f7-458f-9a79-32e72fdc465d
