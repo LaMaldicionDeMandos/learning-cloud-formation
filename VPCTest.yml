@@ -10,6 +10,7 @@ Metadata:
         'y': 323
       z: 0
       embeds:
+        - a53e02a2-1868-4357-9677-db0641c4ea84
         - 159515ca-99f7-458f-9a79-32e72fdc465d
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - b30ef676-f0c0-4cb6-949d-c7688a9146a8
@@ -25,6 +26,9 @@ Metadata:
       parent: ce84ee80-4339-408e-ae8a-afbda72c4425
       embeds: []
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -98,6 +102,9 @@ Metadata:
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
     d00731d1-4662-48b1-82df-79a4d35152e4:
       size:
         width: 140
@@ -110,6 +117,9 @@ Metadata:
       embeds:
         - 9ae53da4-51fb-44af-9155-b587d148fdb5
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -153,6 +163,9 @@ Metadata:
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
+        - d00731d1-4662-48b1-82df-79a4d35152e4
       dependson:
         - 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
     06584ed1-fbda-475e-9a6a-28ac173e2a94:
@@ -175,6 +188,19 @@ Metadata:
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
+    a53e02a2-1868-4357-9677-db0641c4ea84:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 300
+        'y': 530
+      z: 1
+      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
+      embeds: []
 Resources:
   VPCtest:
     Type: 'AWS::EC2::VPC'
@@ -225,7 +251,7 @@ Resources:
       MapPublicIpOnLaunch: true
       Tags:
         - Key: Name
-          Value: Private Subnet test
+          Value: Pravate Subnet test
     Metadata:
       'AWS::CloudFormation::Designer':
         id: b30ef676-f0c0-4cb6-949d-c7688a9146a8
@@ -273,3 +299,41 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 159515ca-99f7-458f-9a79-32e72fdc465d
+  EC2MasterTest:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-6869aa05
+      Tags:
+        - Key: Name
+          Value: "EC2 Master Test
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: a53e02a2-1868-4357-9677-db0641c4ea84
+Mappings:
+  AWSInstanceType2Arch:
+    t2.micro:
+      Arch: HVM64
+Outputs:
+  InstanceId:
+    Description: InstanceId of the newly created EC2 instance
+    Value:
+      Ref: EC2MasterTest
+  AZ:
+    Description: Availability Zone of the newly created EC2 instance
+    Value:
+      Fn::GetAtt:
+        - EC2MasterTest
+        - AvailabilityZone
+  PublicDNS:
+    Description: Public DNSName of the newly created EC2 instance
+    Value:
+      Fn::GetAtt:
+        - EC2MasterTest
+        - PublicDnsName
+  PublicIP:
+    Description: Public IP address of the newly created EC2 instance
+    Value:
+      Fn::GetAtt:
+        - EC2MasterTest
+        - PublicIp
