@@ -225,7 +225,7 @@ Resources:
       MapPublicIpOnLaunch: true
       Tags:
         - Key: Name
-          Value: Pravate Subnet test
+          Value: Private Subnet test
     Metadata:
       'AWS::CloudFormation::Designer':
         id: b30ef676-f0c0-4cb6-949d-c7688a9146a8
