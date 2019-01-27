@@ -57,6 +57,7 @@ Metadata:
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
     48ed8e65-3886-47f4-8885-e15a288138d1:
       size:
         width: 60
@@ -83,6 +84,7 @@ Metadata:
       parent: ce84ee80-4339-408e-ae8a-afbda72c4425
       embeds: []
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -136,6 +138,7 @@ Metadata:
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
     9ae53da4-51fb-44af-9155-b587d148fdb5:
       size:
         width: 60
@@ -149,6 +152,7 @@ Metadata:
       isassociatedwith:
         - 48ed8e65-3886-47f4-8885-e15a288138d1
       iscontainedinside:
+        - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
         - d00731d1-4662-48b1-82df-79a4d35152e4
@@ -185,6 +189,7 @@ Metadata:
       parent: ce84ee80-4339-408e-ae8a-afbda72c4425
       embeds: []
       iscontainedinside:
+        - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
         - ce84ee80-4339-408e-ae8a-afbda72c4425
@@ -304,9 +309,14 @@ Resources:
     Properties:
       InstanceType: t2.micro
       ImageId: ami-6869aa05
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: 'true'
+          DeviceIndex: "0"
+          SubnetId:
+            Ref: PublicSubnet
       Tags:
         - Key: Name
-          Value: "EC2 Master Test
+          Value: Master Test
     Metadata:
       'AWS::CloudFormation::Designer':
         id: a53e02a2-1868-4357-9677-db0641c4ea84
@@ -322,18 +332,18 @@ Outputs:
   AZ:
     Description: Availability Zone of the newly created EC2 instance
     Value:
-      Fn::GetAtt:
+      'Fn::GetAtt':
         - EC2MasterTest
         - AvailabilityZone
   PublicDNS:
     Description: Public DNSName of the newly created EC2 instance
     Value:
-      Fn::GetAtt:
+      'Fn::GetAtt':
         - EC2MasterTest
         - PublicDnsName
   PublicIP:
     Description: Public IP address of the newly created EC2 instance
     Value:
-      Fn::GetAtt:
+      'Fn::GetAtt':
         - EC2MasterTest
         - PublicIp
