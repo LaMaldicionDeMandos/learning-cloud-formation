@@ -291,6 +291,7 @@ Resources:
   PrincipalSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
+      GroupName: "sg_primary"
       VpcId: !Ref VPCtest
       GroupDescription: Security Group Principal
       SecurityGroupIngress:
@@ -314,9 +315,20 @@ Resources:
           DeviceIndex: "0"
           SubnetId:
             Ref: PublicSubnet
+          GroupSet:
+          - "Ref": "PrincipalSecurityGroup"
       Tags:
         - Key: Name
           Value: Master Test
+      UserData: {"Fn::Base64" : {"Fn::Join" : ["", ["#!/bin/bash -ex\n",
+          "yum -y update\n",
+          "yum -y install httpd php mysql php-mysql\n",
+          "chkconfig httpd on\n",
+          "service httpd start\n",
+          "cd /var/www/html\n",
+          "wget https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-13/scripts/app.tgz\n",
+          "tar xvfz app.tgz\n",
+          "chown apache:root /var/www/html/rds.conf.php"]]}}
     Metadata:
       'AWS::CloudFormation::Designer':
         id: a53e02a2-1868-4357-9677-db0641c4ea84
