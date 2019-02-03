@@ -307,6 +307,21 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 159515ca-99f7-458f-9a79-32e72fdc465d
+  DatabaseSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupName: "sg_database"
+      VpcId: !Ref VPCtest
+      GroupDescription: Security Group PAra la base de datos
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          SourceSecurityGroupId:
+            Ref: "PrincipalSecurityGroup"
+      Tags:
+        - Key: Name
+          Value: Security Group Database
   EC2MasterTest:
     Type: 'AWS::EC2::Instance'
     Properties:
