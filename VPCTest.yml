@@ -1,211 +1,4 @@
 AWSTemplateFormatVersion: 2010-09-09
-Metadata:
-  'AWS::CloudFormation::Designer':
-    ce84ee80-4339-408e-ae8a-afbda72c4425:
-      size:
-        width: 400
-        height: 300
-      position:
-        x: 154
-        'y': 323
-      z: 0
-      embeds:
-        - a53e02a2-1868-4357-9677-db0641c4ea84
-        - 159515ca-99f7-458f-9a79-32e72fdc465d
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - b30ef676-f0c0-4cb6-949d-c7688a9146a8
-        - 972c8533-804f-4863-9b9a-32a36d178a8e
-    972c8533-804f-4863-9b9a-32a36d178a8e:
-      size:
-        width: 80
-        height: 80
-      position:
-        x: 420
-        'y': 350
-      z: 1
-      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
-      embeds: []
-      iscontainedinside:
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-    48ed8e65-3886-47f4-8885-e15a288138d1:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 40
-        'y': 330
-      z: 0
-      embeds: []
-    46d920b5-d5d1-4e5b-8981-b4f08abeb5d5:
-      source:
-        id: ce84ee80-4339-408e-ae8a-afbda72c4425
-      target:
-        id: 48ed8e65-3886-47f4-8885-e15a288138d1
-      z: 0
-    b30ef676-f0c0-4cb6-949d-c7688a9146a8:
-      size:
-        width: 80
-        height: 80
-      position:
-        x: 420
-        'y': 530
-      z: 1
-      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
-      embeds: []
-      iscontainedinside:
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-    d00731d1-4662-48b1-82df-79a4d35152e4:
-      size:
-        width: 140
-        height: 140
-      position:
-        x: 190
-        'y': 370
-      z: 1
-      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
-      embeds:
-        - 9ae53da4-51fb-44af-9155-b587d148fdb5
-      iscontainedinside:
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-    9ae53da4-51fb-44af-9155-b587d148fdb5:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 220
-        'y': 410
-      z: 2
-      parent: d00731d1-4662-48b1-82df-79a4d35152e4
-      embeds: []
-      isassociatedwith:
-        - 48ed8e65-3886-47f4-8885-e15a288138d1
-      iscontainedinside:
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-        - d00731d1-4662-48b1-82df-79a4d35152e4
-      dependson:
-        - 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
-    06584ed1-fbda-475e-9a6a-28ac173e2a94:
-      source:
-        id: d00731d1-4662-48b1-82df-79a4d35152e4
-      target:
-        id: 972c8533-804f-4863-9b9a-32a36d178a8e
-      z: 1
-    159515ca-99f7-458f-9a79-32e72fdc465d:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 180
-        'y': 540
-      z: 1
-      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
-      embeds: []
-      iscontainedinside:
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-        - ce84ee80-4339-408e-ae8a-afbda72c4425
-    a53e02a2-1868-4357-9677-db0641c4ea84:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 300
-        'y': 530
-      z: 1
-      parent: ce84ee80-4339-408e-ae8a-afbda72c4425
-      embeds: []
 Resources:
   VPCtest:
     Type: 'AWS::EC2::VPC'
@@ -216,9 +9,7 @@ Resources:
       Tags:
         - Key: Name
           Value: VPC Test
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: ce84ee80-4339-408e-ae8a-afbda72c4425
+
   PublicSubnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
@@ -229,26 +20,20 @@ Resources:
       Tags:
         - Key: Name
           Value: Public Subnet test
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 972c8533-804f-4863-9b9a-32a36d178a8e
+
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
     Properties:
       Tags:
         - Key: Name
           Value: Internet Gateway test
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 48ed8e65-3886-47f4-8885-e15a288138d1
+
   GatewayToInternet:
     Type: 'AWS::EC2::VPCGatewayAttachment'
     Properties:
       InternetGatewayId: !Ref InternetGateway
       VpcId: !Ref VPCtest
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 46d920b5-d5d1-4e5b-8981-b4f08abeb5d5
+
   PrivateSubnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
@@ -259,9 +44,7 @@ Resources:
       Tags:
         - Key: Name
           Value: Pravate Subnet test
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: b30ef676-f0c0-4cb6-949d-c7688a9146a8
+
   RouteTable:
     Type: 'AWS::EC2::RouteTable'
     Properties:
@@ -269,9 +52,7 @@ Resources:
       Tags:
         - Key: Name
           Value: Route Table test
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: d00731d1-4662-48b1-82df-79a4d35152e4
+
   RoutePublicTest:
     Type: 'AWS::EC2::Route'
     DependsOn: GatewayToInternet
@@ -279,17 +60,13 @@ Resources:
       RouteTableId: !Ref RouteTable
       DestinationCidrBlock: 0.0.0.0/0
       GatewayId: !Ref InternetGateway
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 9ae53da4-51fb-44af-9155-b587d148fdb5
+
   PublicSubnetRouteAssociation:
     Type: 'AWS::EC2::SubnetRouteTableAssociation'
     Properties:
       RouteTableId: !Ref RouteTable
       SubnetId: !Ref PublicSubnet
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 06584ed1-fbda-475e-9a6a-28ac173e2a94
+
   PrincipalSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
@@ -304,9 +81,7 @@ Resources:
       Tags:
         - Key: Name
           Value: Security Group Principal
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 159515ca-99f7-458f-9a79-32e72fdc465d
+
   DatabaseSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
@@ -322,6 +97,7 @@ Resources:
       Tags:
         - Key: Name
           Value: Security Group Database
+
   EC2MasterTest:
     Type: 'AWS::EC2::Instance'
     Properties:
@@ -346,9 +122,7 @@ Resources:
           "wget https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-13/scripts/app.tgz\n",
           "tar xvfz app.tgz\n",
           "chown apache:root /var/www/html/rds.conf.php"]]}}
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: a53e02a2-1868-4357-9677-db0641c4ea84
+
 Mappings:
   AWSInstanceType2Arch:
     t2.micro:
